@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_soundcheck"
+            android:icon="@mipmap/ic_queue_music_black_18dp"
+            android:title="@string/naw_drawer_soundcheck"
+            android:checked="true"/>
+        <item
+            android:id="@+id/drawer_equipment"
+            android:icon="@mipmap/ic_mic_black_18dp"
+            android:title="@string/naw_drawer_equipment"/>
+        <item
+            android:id="@+id/drawer_photo"
+            android:icon="@mipmap/ic_photo_library_black_18dp"
+            android:title="@string/naw_drawer_photo"/>
+        <item
+            android:id="@+id/drawer_video"
+            android:icon="@mipmap/ic_video_library_black_18dp"
+            android:title="@string/naw_drawer_video"/>
+        <item
+            android:id="@+id/drawer_contacts"
+            android:icon="@mipmap/ic_navigation_black_18dp"
+            android:title="@string/naw_drawer_contacts"/>
+
+    </group>
+
+</menu>
