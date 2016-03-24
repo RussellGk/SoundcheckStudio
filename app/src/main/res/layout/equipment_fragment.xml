@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/equip_content"
+    style="@style/Container.MainBackground">
 
-    <ListView
-        android:id="@+id/list_equipment_view"
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/activity_vertical_margin"/>
+        android:id="@+id/context_recyclerview"/>
 
-</LinearLayout>
+    <!--<ListView-->
+        <!--android:id="@+id/list_equipment_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:padding="@dimen/activity_vertical_margin"/>-->
+
+</android.support.design.widget.CoordinatorLayout>

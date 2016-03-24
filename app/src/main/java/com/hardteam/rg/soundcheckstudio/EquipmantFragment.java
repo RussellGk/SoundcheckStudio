@@ -2,10 +2,16 @@ package com.hardteam.rg.soundcheckstudio;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridLayout;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -18,13 +24,28 @@ public class EquipmantFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View equipmantView = inflater.inflate(R.layout.equipment_fragment,container,false);
-        ListView equipmentListView = (ListView)equipmantView.findViewById(R.id.list_equipment_view);
+        final View equipmentView = inflater.inflate(R.layout.equipment_fragment,container,false);
+        RecyclerView equipmentRecyclerView = (RecyclerView)equipmentView.findViewById(R.id.context_recyclerview);
         List<Equipment> adapterData = getDataList();
-        EquipmentAdapter equipmentAdapter = new EquipmentAdapter(getActivity(), adapterData);
-        equipmentListView.setAdapter(equipmentAdapter);
+        EquipmentAdapter equipmentAdapter = new EquipmentAdapter(adapterData);
+        equipmentRecyclerView.setAdapter(equipmentAdapter);
+
+        //How to show the RecyclerView
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        equipmentRecyclerView.setLayoutManager(linearLayoutManager);
+
+//        FloatingActionButton floatingActionButton = (FloatingActionButton) equipmentView.findViewById(R.id.fab);
+//        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Snackbar.make(equipmentView,"Form for sending the letter", Snackbar.LENGTH_SHORT).show();
+//
+//            }
+//        });
+
         getActivity().setTitle("Оборудование");
-        return equipmantView;
+        return equipmentView;
     }
 
     private List<Equipment> getDataList()
