@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/drawer_header_height"
+    android:background="@mipmap/scstudio"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/drawer_padding_top"
+    android:paddingLeft="@dimen/drawer_padding_left"
+    android:paddingBottom="@dimen/drawer_padding_top"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/drawer_header_padding_button"
+        android:id="@+id/header_title"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/base_phone"
+                android:text="@string/header_phone"
+                android:textStyle="bold"
+                android:textSize="@dimen/drawer_header_text"
+                android:textColor="@color/colorDrawerHeaderText"
+                android:fontFamily="@string/header_font_phone"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/base_name"
+                android:text="@string/header_name"
+                android:textSize="@dimen/drawer_header_text"
+                android:textColor="@color/colorDrawerHeaderText"
+                android:fontFamily="@string/header_font_name"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

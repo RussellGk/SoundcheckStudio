@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">SoundcheckStudio</string>
     <string name="action_settings">Settings</string>
+    <string name="naw_drawer_soundcheck">Soundcheck</string>
+    <string name="naw_drawer_equipment">Оборудование</string>
+    <string name="naw_drawer_photo">Фотографии</string>
+    <string name="naw_drawer_video">Видео</string>
+    <string name="naw_drawer_contacts">Контакты</string>
+
+    <string name="header_phone">Тел: +7(906)43-64-115</string>
+    <string name="header_name">Время: 9.00 - 23.00</string>
+    <string name="header_font_phone">roboto-medium</string>
+    <string name="header_font_name">roboto-regular</string>
+
 </resources>
