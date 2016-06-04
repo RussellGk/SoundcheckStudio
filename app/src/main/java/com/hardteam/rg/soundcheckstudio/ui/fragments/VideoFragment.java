@@ -1,4 +1,4 @@
-package com.hardteam.rg.soundcheckstudio;
+package com.hardteam.rg.soundcheckstudio.ui.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,15 +7,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.hardteam.rg.soundcheckstudio.R;
+
 /**
  * Created by rg on 3/22/16.
  */
-public class ContactsFragment extends Fragment {
+public class VideoFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View contactsView = inflater.inflate(R.layout.contacts_fragment, container, false);
-        getActivity().setTitle("Контакты");
-        return contactsView;
+        View videoView = inflater.inflate(R.layout.video_fragment, container, false);
+        getActivity().setTitle("Видео");
+        return videoView;
     }
 }

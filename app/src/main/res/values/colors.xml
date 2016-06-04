@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorDrawerHeaderText">#F7F7F7</color>
+    <color name="colorBackSoundcheck">#FFFFB940</color>
+    <color name="colorBack">#bdb3b3</color>
 </resources>
