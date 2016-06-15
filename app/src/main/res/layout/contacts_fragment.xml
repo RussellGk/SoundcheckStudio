@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/google_map_contact"
     style="@style/Container.MainBackground">
-    <TextView
+
+    <fragment
+        android:id="@+id/map"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="@dimen/drawer_header_text"
-        android:text="Contact info + Google Map navigation"/>
+        class="com.google.android.gms.maps.SupportMapFragment"/>
 
-</LinearLayout>
+</FrameLayout>
+
+
+<!--<LinearLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--style="@style/Container.MainBackground">-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:textSize="@dimen/drawer_header_text"-->
+        <!--android:text="Contact info + Google Map navigation"/>-->
+
+<!--</LinearLayout>-->
